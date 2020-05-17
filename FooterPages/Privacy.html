@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title> The Assemblers </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- Font Awasome Script -->
+        <script src="https://kit.fontawesome.com/0ff0b45b0e.js" crossorigin="anonymous"></script>
+
+        <style>
+            body {
+                margin:0;
+                padding:0;
+            }
+
+            /* ----------------------- Navigation Bar Starts --------------------- */
+
+            .n-b {
+                font-size: 32px;
+                font-family: 'Lobster Two', cursive;
+                color:black;
+            }
+
+            /* ------------------ Navigation Bar Ends ------------------- */
+
+            /* ------------------ Privacy Policy Starts ----------------- */
+
+            .pp-edit h1{
+                font-family: 'Baskervville', serif;
+                font-weight: bold;
+                font-size: 3em;
+            }
+
+            .pp-edit h2 {
+                font-size:1.5em;
+            }
+
+            @media only screen and (max-width:992px) {
+                .pp-edit h1 {
+                font-size: 2em;
+                }
+            }
+
+            .Assemblers-Footer-Body .row a{
+                color:white;
+                text-decoration: none;
+                pointer: cursor;
+            }
+
+            .Assemblers-Footer-Body .row a:hover {
+                color:cadetblue;
+                border-bottom: white;
+            }
+
+            @media only screen and (max-width:600px) {
+                .p-edit {
+                    display: none;
+                }
+                .h-edit {
+                    display: none;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+    <!-- Navigation Bar Starts -->
+    <div class="Assemblers-Navbar sticky-top">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+          <a class="navbar-brand n-b" href="#"> The Assemblers.com </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link ml-3 text-white" href="#"> HOME <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-3 text-white" href="#"> TOP 10 BUILDS </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle ml-3 text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                  COMPONENTS
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item bg-dark text-white text-center" href="#"> Motherboard </a>
+                  <a class="dropdown-item bg-dark text-white text-center" href="#"> Processor </a>
+                  <a class="dropdown-item bg-dark text-white text-center" href="#"> Graphic Card </a>
+                  <a class="dropdown-item bg-dark text-white text-center" href="#"> Hard Disk </a>
+                  <a class="dropdown-item bg-dark text-white text-center" href="#"> RAM </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-3 text-white ml-3" href="#"> CONTACT </a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <hr>
+              <div class="form-inline">
+              <a class="nav-link ml-5 text-white nav-item btn btn-danger btn-sm" href="#" data-toggle="modal" data-target="#As-ModalForm"> Sign In</a>
+              </div>
+            </form>
+          </div>
+        </nav>
+    </div>
+    <!-- Navigation Bar Ends -->
+
+    <!-- Login Form Starts -->
+
+    <div class="Assemblers-Login-Body">
+        <div class="modal fade" id="As-ModalForm">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content form-elegant">
+            <!--Header-->
+            <div class="modal-header text-center">
+            <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Sign in</strong></h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body mx-4">
+            <!--Body-->
+            <div class="md-form mb-5">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Enter Email Address">
+              </div>
+            </div>
+  
+            <div class="md-form pb-3">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input type="password" class="form-control" placeholder="Enter Password">
+              </div>
+            </div>
+  
+            <div class="text-center mb-3">
+              <button type="button" class="btn btn-rounded btn-primary z-depth-1a px-3"> Sign in </button>
+            </div>
+            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign in with:</p>
+  
+            <div class="row my-3 d-flex justify-content-center">
+              <!--Instagram-->
+              <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a social-edit"><i class="fab fa-instagram"></i></button>
+              <!--Facebook-->
+              <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a social-edit"><i class="fab fa-facebook-f"></i></button>
+              <!--Google +-->
+              <button type="button" class="btn btn-white btn-rounded z-depth-1a social-edit"><i class="fab fa-google-plus-g"></i></button>
+            </div>
+          </div>
+          <!--Footer-->
+          <div class="modal-footer mx-5 pt-3 mb-1">
+            Not a member? &ensp; <button type="submit" class="btn btn-danger"> Sign Up! </button>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+    </div>
+
+    <!-- Login Form Ends -->
+
+    <!-- Privacy Policy Starts -->
+    <div class="privacy-policy container pp-edit">
+        <h1 class="text-primary"> Privacy Policy </h1>
+        <BR>
+        <p class="text-justify">
+            This Privacy Policy applies to www.theassemblers.cf
+            
+            http://www.theassemblers.cf recognizes the importance of maintaining your privacy. We value your privacy and appreciate your trust in us. This Policy describes how we treat user information we collect on http://www.theassemblers.cf and other offline sources. This Privacy Policy applies to current and former visitors to our website and to our online customers. By visiting and/or using our website, you agree to this Privacy Policy.
+            
+            http://www.theassemblers.cf 
+            
+            <h2>Information we collect</h2>
+            
+            Contact information. We might collect your name, email, mobile number, phone number, street, city, state, pincode, country and IP address.
+            
+            Payment and billing information. We might collect your billing name, billing address and payment method when you buy a product. We NEVER collect your credit card number or credit card expiry date or other details pertaining to your credit card on our website. Credit card information will be obtained and processed by our online payment partner CC Avenue.
+            
+            The information you post. We collect information you post in a public space on our website or on a third-party social media site belonging to buildpc
+            
+            Demographic information. We may collect demographic information about you, events you like, events you intend to participate in, tickets you buy, or any other information provided by your during the use of our website. We might collect this as a part of a survey also.
+            
+            Other information. If you use our website, we may collect information about your IP address and the browser you're using. We might look at what site you came from, duration of time spent on our website, pages accessed or what site you visit when you leave us. We might also collect the type of mobile device you are using, or the version of the operating system your computer or device is running.
+            
+            We collect information in different ways.
+            
+            We collect information directly from you. We collect information directly from you when you register for an event or buy a product. We also collect information if you post a comment on our websites or ask us a question through phone or email.
+            
+            We collect information from you passively. We use tracking tools like Google Analytics, Google Webmaster, browser cookies and web beacons for collecting information about your usage of our website.
+            
+            We get information about you from third parties. For example, if you use an integrated social media feature on our websites. The third-party social media site will give us certain information about you. This could include your name and email address.
+            
+            <h2>Use of your personal information</h2>
+            
+            We use the information to contact you: We might use the information you provide to contact you for confirmation of a purchase on our website or for other promotional purposes.
+            
+            We use the information to respond to your requests or questions. We might use your information to confirm your registration for an event or contest.
+            
+            We use the information to improve our products and services. We might use your information to customize your experience with us. This could include displaying content based on your preferences.
+            
+            We use the information to look at site trends and customer interests. We may use your information to make our website and products better. We may combine information we get from you with information about you we get from third parties.
+            
+            We use information for security purposes. We may use the information to protect our company, our customers, or our websites.
+            
+            We use information for marketing purposes. We might send you information about special promotions or offers. We might also tell you about new features or products. These might be our own offers or products, or third-party offers or products we think you might find interesting. Or, for example, if you buy tickets from us we'll enroll you in our newsletter.
+            
+            We use the information to send you transactional communications. We might send you emails or SMS about your account or a ticket purchase.
+            
+            We use information as otherwise permitted by law.
+            
+            <h2>Sharing of information with third-parties</h2>
+            
+            We will share information with third parties who perform services on our behalf. We share information with vendors who help us manage our online registration process or payment processors or transactional message processors. Some vendors may be located outside of India.
+            
+            We will share information with our business partners. This includes a third party who provide or sponsor an event, or who operates a venue where we hold events. Our partners use the information we give them as described in their privacy policies.
+            
+            We may share information if we think we have to in order to comply with the law or to protect ourselves. We will share information to respond to a court order or subpoena. We may also share it if a government agency or investigatory body requests. Or, we might also share information when we are investigating potential fraud.
+            
+            We may share information with any successor to all or part of our business. For example, if part of our business is sold we may give our customer list as part of that transaction.
+            
+            We may share your information for reasons not described in this policy. We will tell you before we do this.
+            
+            <h2>Email Opt-Out</h2>
+            
+            You can opt out of receiving our marketing emails. To stop receiving our promotional emails, please email It may take about ten days to process your request. Even if you opt out of getting marketing messages, we will still be sending you transactional messages through email and SMS about your purchases.
+            
+            <h2>Third party sites</h2>
+            
+            If you click on one of the links to third party websites, you may be taken to websites we do not control. This policy does not apply to the privacy practices of those websites. Read the privacy policy of other websites carefully. We are not responsible for these third-party sites.
+        </p>
+    </div>
+    <!-- Privacy Policy Ends -->
+
+    <!-- Assemblers Footer Body Starts-->
+    <div class="Assemblers-Footer-Body bg-dark text-white text-center">
+        <footer class="page-footer font-small stylish-color-dark pt-4">
+          <div class="container text-center text-md-left">
+            <div class="row">
+              <hr class="clearfix w-100 d-md-none">
+              <div class="col-md-4 mx-auto text-center">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!">Gaurav Bhalerao</a>
+                    </li>
+                    <li>
+                     <a href="#!">xxxxxxxxxxxxxxxx@gmail.com</a>
+                    </li>
+                    <li>
+                     <a href="#!">contact : xxxxxxxxxx</a>
+                    </li>
+                    <li>
+                      <a href="#!">PUNE</a>
+                    </li>
+                  </ul>
+              </div>
+              <!-- -->
+              <div class="col-md-4 mx-auto p-edit text-center">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Privacy</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#!">Credintial Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">Profile</a>
+                </li>
+                <li>
+                  <a href="#!">Order Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <!-- -->
+            <div class="col-md-4 mx-auto h-edit text-center">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Help</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Account</a>
+                </li>
+                <li>
+                  <a href="#!">Order</a>
+                </li>
+                <li>
+                  <a href="#!">Credintials</a>
+                </li>
+                <li>
+                  <a href="#!">Product</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded" data-toggle="modal" data-target="#As-ModalForm">Sign up!</a>
+          </li>
+        </ul>
+        <!-- Call to action -->
+        <hr>
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-insta mx-1" href="https://www.instagram.com/_ace_07_/" style="pointer:cursor">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb mx-1" href="#" style="pointer:cursor;">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1" href="#" style="pointer:cursor;">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus mx-1" href="#" style="pointer:cursor;">
+              <i class="fab fa-google-plus-g"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-li mx-1" href="#" style="pointer:cursor";>
+              <i class="fab fa-linkedin-in"> </i>
+            </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+  
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2020 Copyright<a href="#" style="color:white"> TheAssemblers.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+
+    </body>
+</html>
