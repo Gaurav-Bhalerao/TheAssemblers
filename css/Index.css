@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Baskervville|Cormorant+Garamond|Cute+Font|Gayathri|IM+Fell+Great+Primer+SC|Lily+Script+One|Lobster+Two|Montserrat+Alternates|Nixie+One|Poiret+One|Poppins|Quantico|Raleway|Roboto+Mono|Source+Code+Pro&display=swap');
+
+body {
+    margin:0;
+    padding:0;
+}
+
+/* ----------------------- Navigation Bar Starts --------------------- */
+.n-b {
+    font-size: 32px;
+    font-family: 'Lobster Two', cursive;
+    color:black;
+}
+/* ------------------ Navigation Bar Ends ------------------- */
+
+
+/* -------------------Main Body Starts --------------------- */
+.IMG-1 {
+    height:auto;
+    width:100%;
+}
+
+.logo-name {
+    font-size: 4.5em;
+	font-family: 'Lobster Two', cursive;
+}
+
+.Assemblers-Main-Body {
+  background-color: #F0F1F2;
+  border-bottom:2px solid gold;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-name {
+    font-size: 2.5em;
+  }
+  
+  .Assemblers-Main-Body h5 {
+    font-size: 15px;
+  }
+
+  .IMG-1 {
+    margin-top:-20px;
+  }
+
+  h1 {
+    margin-top:-10px;
+  }
+}
+/* -------------------- Main Body Ends ------------------- */
+
+/*---------------Slide Show Starts ------------------------ */
+.Assemblers-Second-Body .As-Card-Head {
+  font-family: 'Baskervville', serif;
+  font-size:3em;
+  font-weight: bold;
+}
+
+.Assemblers-Second-Body {
+  
+}
+
+.slide-bg {
+
+}
+
+@media only screen and (max-width:992px) {
+  .Assemblers-Second-Body .As-Card-Head {
+    font-size: 2em;
+  }
+
+  .Assemblers-Second-Body h5 {
+    font-size: 15px;
+  }
+
+  .Assemblers-Second-Body {
+    
+  }
+}
+
+.IMG-1 {
+  height:auto;
+  width:100%;
+}
+
+@media only screen and (max-width:992px) {
+  .slide-bg {
+    
+  }
+}
+/* ------------------- SlideShow Ends ---------------- */
+
+/* -------------------- Service Section Strats ------------ */
+.Assemblers-Service-Body {
+  background-color:#F0F1F2; /* antiquewhite; */
+  border-top:2px solid gold;
+}
+
+.s-head {
+  font-family: 'Baskervville', serif;
+  font-size:3em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width:600px) {
+  .Assemblers-Service-Body .s-head {
+    font-size: 2em;
+  }
+}
+.card:hover {
+  box-shadow: 5px 7px 9px -4px #007BFF;  /* rgb(158, 158, 158); */
+}
+
+.S-IMG {
+  height:auto;
+  width:15%;
+  text-align: center;
+  display:block;
+}
+/* -------------------- Service Section Ends ------------ */
+
+/* -------------------- Service Footer Starts ------------ */
+
+.Assemblers-Footer-Body .row a{
+  color:white;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+.Assemblers-Footer-Body .row a:hover {
+  color:cadetblue;
+  border-bottom: white;
+}
+
+@media only screen and (max-width:600px) {
+  .p-edit {
+    display: none;
+  }
+  .h-edit {
+    display: none;
+  }
+}
+/* ------------------ Assemblers Footer Ends ------------------ */
+
+/* ------------------ Assemblers Login Form Starts ------------- */
+
+.Assemblers-Login-Body .social-edit:hover {
+  border:2px solid #007BFF;
+}
